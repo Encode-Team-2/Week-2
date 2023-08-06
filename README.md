@@ -114,3 +114,14 @@ Balance for Wallet 0x2dc7709B7af83c61c82cbd2555DCda60ec481c29 is 0.4956153285677
 WinningProposal: 0
 Done in 4.45s.
 ```
+
+
+## WInner Name
+
+```sh
+yarn run ts-node --files scripts/Winner.ts 0xdB27a3E0B47540759386f144F4523d2aC95f4b76 
+Contract address: 0xdB27a3E0B47540759386f144F4523d2aC95f4b76
+Balance for Wallet 0x2dc7709B7af83c61c82cbd2555DCda60ec481c29 is 0.48851418705860866
+winner: cookie
+Done in 4.31s.
+```
