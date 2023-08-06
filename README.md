@@ -18,7 +18,7 @@ npx hardhat run scripts/deploy.ts
 ## Deploy Contract
 
 ```sh
-yarn run ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate min
+yarn run ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate
 yarn run v1.22.19
 $ /workspaces/Week-2/node_modules/.bin/ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate min
 Deploying Ballot contract
@@ -86,6 +86,14 @@ Arguments: Contract address and vote index
 
 ```sh
 yarn ts-node --files scripts/Vote.ts 0x2D1f19684A4c4Cd8541b9c18198447703908646F 0
+```
+
+## Delegate
+Arguments: contractAddress and anotherVoterAddresss
+
+```sh
+yarn ts-node --files scripts/Delegate.ts 0x5FbDB2315678afecb367f032d93F642f64180aa3 0x2bdB408FDD46C605095eC76427437d1c846
+10ABF
 ```
 
 ## Check WinningProposals
