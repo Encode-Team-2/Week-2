@@ -18,17 +18,19 @@ npx hardhat run scripts/deploy.ts
 ## Deploy Contract
 
 ```sh
-yarn run ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate
+$ yarn run ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate lemon
 yarn run v1.22.19
-$ /workspaces/Week-2/node_modules/.bin/ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate min
+$ /workspaces/Week-2/node_modules/.bin/ts-node --files scripts/DeployBallot.ts cookie macha mango chocolate lemon
 Deploying Ballot contract
 Proposals: 
 Proposal N. 1: cookie
 Proposal N. 2: macha
 Proposal N. 3: mango
 Proposal N. 4: chocolate
-Proposal N. 5: min
-Contract deployed to the address 0x5FbDB2315678afecb367f032d93F642f64180aa3
+Proposal N. 5: lemon
+Balance for Wallet 0x2dc7709B7af83c61c82cbd2555DCda60ec481c29 is 0.4900408601476388
+Contract deployed to the address 0xdB27a3E0B47540759386f144F4523d2aC95f4b76
+Chairperson address 0x2dc7709B7af83c61c82cbd2555DCda60ec481c29
 {
   index: 0,
   name: 'cookie',
@@ -63,13 +65,14 @@ Contract deployed to the address 0x5FbDB2315678afecb367f032d93F642f64180aa3
 }
 {
   index: 4,
-  name: 'min',
+  name: 'lemon',
   proposal: Result(2) [
-    '0x6d696e0000000000000000000000000000000000000000000000000000000000',
+    '0x6c656d6f6e000000000000000000000000000000000000000000000000000000',
     0n
   ]
 }
-Done in 6.85s.
+0n
+Done in 14.08s.
 ```
 
 ## Give right to Vote
