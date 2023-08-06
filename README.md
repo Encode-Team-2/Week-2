@@ -1,15 +1,11 @@
-# Sample Hardhat Project
+# Week2 Weekend Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
+Prepare env 
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+yarn install 
+yarn hardhat compile
+yarn hardhat test
 ```
 
 
@@ -80,7 +76,7 @@ Done in 14.08s.
 Arguments: Contract addtress and voter address
 
 ```sh
-yarn ts-node --files scripts/GiveRightToVote.ts 0x2D1f19684A4c4Cd8541b9c18198447703908646F 0x08206dA8cB2680c4138F21fC22aF8C0e6704CefF
+yarn ts-node --files scripts/GiveRightToVote.ts 0xdB27a3E0B47540759386f144F4523d2aC95f4b76 {voterAddress}
 ```
 
 ## Vote
@@ -88,14 +84,14 @@ yarn ts-node --files scripts/GiveRightToVote.ts 0x2D1f19684A4c4Cd8541b9c18198447
 Arguments: Contract address and vote index
 
 ```sh
-yarn ts-node --files scripts/Vote.ts 0x2D1f19684A4c4Cd8541b9c18198447703908646F 0
+yarn ts-node --files scripts/Vote.ts 0xdB27a3E0B47540759386f144F4523d2aC95f4b76 {voteIndex}
 ```
 
 ## Delegate
 Arguments: contractAddress and anotherVoterAddresss
 
 ```sh
-yarn ts-node --files scripts/Delegate.ts 0x5FbDB2315678afecb367f032d93F642f64180aa3 0x2bdB408FDD46C605095eC76427437d1c846
+yarn ts-node --files scripts/Delegate.ts 0xdB27a3E0B47540759386f144F4523d2aC95f4b76 {voterAddress}
 10ABF
 ```
 
@@ -104,12 +100,12 @@ yarn ts-node --files scripts/Delegate.ts 0x5FbDB2315678afecb367f032d93F642f64180
 Run command and specify contract address as an argument
 
 ```sh 
-yarn run ts-node --files scripts/WinningProposal.ts 0x57c470bCf6595f092a395686D9d7A11558E4E062
+yarn run ts-node --files scripts/WinningProposal.ts 0xdB27a3E0B47540759386f144F4523d2aC95f4b76
 ```
 Sample output
 
 ```
-Contract address: 0x57c470bCf6595f092a395686D9d7A11558E4E062
+Contract address: 0xdB27a3E0B47540759386f144F4523d2aC95f4b76
 Balance for Wallet 0x2dc7709B7af83c61c82cbd2555DCda60ec481c29 is 0.4956153285677416
 WinningProposal: 0
 Done in 4.45s.
