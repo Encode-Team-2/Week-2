@@ -72,6 +72,14 @@ Contract deployed to the address 0x5FbDB2315678afecb367f032d93F642f64180aa3
 Done in 6.85s.
 ```
 
+## Give right to Vote
+
+Arguments: Contract addtress and voter address
+
+```sh
+yarn ts-node --files scripts/GiveRightToVote.ts 0x2D1f19684A4c4Cd8541b9c18198447703908646F 0x08206dA8cB2680c4138F21fC22aF8C0e6704CefF
+```
+
 ## Check WinningProposals
 
 Run command and specify contract address as an argument
