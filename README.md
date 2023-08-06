@@ -80,6 +80,14 @@ Arguments: Contract addtress and voter address
 yarn ts-node --files scripts/GiveRightToVote.ts 0x2D1f19684A4c4Cd8541b9c18198447703908646F 0x08206dA8cB2680c4138F21fC22aF8C0e6704CefF
 ```
 
+## Vote
+
+Arguments: Contract address and vote index
+
+```sh
+yarn ts-node --files scripts/Vote.ts 0x2D1f19684A4c4Cd8541b9c18198447703908646F 0
+```
+
 ## Check WinningProposals
 
 Run command and specify contract address as an argument
